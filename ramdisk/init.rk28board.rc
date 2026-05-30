@@ -1,5 +1,5 @@
 on boot
-    write /sys/bus/platform/drivers/dwc_otg/force_usb_mode 1
+    #write /sys/bus/platform/drivers/dwc_otg/force_usb_mode 1
 
     insmod /system/lib/modules/pl2303.ko
 

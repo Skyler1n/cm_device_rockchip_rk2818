@@ -8,28 +8,28 @@ $(call inherit-product-if-exists, vendor/rockchip/rk2818/device-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/rockchip/rk2818/overlay
 
+# Place inital files
 PRODUCT_COPY_FILES += \
-    device/rockchip/rk2818/init.rc:root/init.rc \
-    device/rockchip/rk2818/init.rk28board.rc:root/init.rk28board.rc \
-    device/rockchip/rk2818/ueventd.rk28board.rc:root/ueventd.rk28board.rc
+    device/rockchip/rk2818/ramdisk/init.rc:root/init.rc \
+    device/rockchip/rk2818/ramdisk/initlogo.rle:root/initlogo.rle \
+    device/rockchip/rk2818/ramdisk/ueventd.rk28board.rc:root/ueventd.rk28board.rc \
+    device/rockchip/rk2818/kernel/modules/aufs.ko:root/aufs.ko \
+    device/rockchip/rk2818/ramdisk/xmode/clean_cache.sh:root/xmode/clean_cache.sh \
+    device/rockchip/rk2818/ramdisk/xmode/readonly.sh:root/xmode/readonly.sh \
+    device/rockchip/rk2818/ramdisk/xmode/writeable.sh:root/xmode/writeable.sh 
 
+# Place etc files
 PRODUCT_COPY_FILES += \
     device/rockchip/rk2818/init.d/10pointercal:system/etc/init.d/10pointercal \
     device/rockchip/rk2818/etc/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
     device/rockchip/rk2818/etc/vold.fstab:system/etc/vold.fstab \
     device/rockchip/rk2818/etc/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
+# Place modules files
 PRODUCT_COPY_FILES += \
-    device/rockchip/rk2818/modules/bluetooth.ko:system/lib/modules/bluetooth.ko \
-    device/rockchip/rk2818/modules/bnep.ko:system/lib/modules/bnep.ko \
-    device/rockchip/rk2818/modules/hci_usb.ko:system/lib/modules/hci_usb.ko \
-    device/rockchip/rk2818/modules/hidp.ko:system/lib/modules/hidp.ko \
-    device/rockchip/rk2818/modules/l2cap.ko:system/lib/modules/l2cap.ko \
-    device/rockchip/rk2818/modules/pl2303.ko:system/lib/modules/pl2303.ko \
-    device/rockchip/rk2818/modules/rfcomm.ko:system/lib/modules/rfcomm.ko \
-    device/rockchip/rk2818/modules/rfkill.ko:system/lib/modules/rfkill.ko \
-    device/rockchip/rk2818/modules/sco.ko:system/lib/modules/sco.ko
-
+    device/rockchip/rk2818/kernel/modules/cifs.ko:system/lib/modules/cifs.ko
+	
+# Place permission files
 PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
     frameworks/base/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
@@ -40,11 +40,26 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
     frameworks/base/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
+# Keylayout setup
+PRODUCT_COPY_FILES += \
+    device/rockchip/rk2818/keylayout/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin \
+    device/rockchip/rk2818/keylayout/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin \
+    device/rockchip/rk2818/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
+    device/rockchip/rk2818/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl
+
 PRODUCT_PACKAGES += \
     Gallery \
-    TSCalibration \
-    gps.default
+    TSCalibration
 
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+	LOCAL_KERNEL := device/rockchip/rk2818/kernel/kernel.img
+else
+	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel
+
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=8
 PRODUCT_NAME := full_rk2818
 PRODUCT_DEVICE := rk2818

@@ -11,3 +11,8 @@ ro.additionalmounts=/mnt/nand;/mnt/usb
 ro.vold.switchablepair=/mnt/sdcard,/mnt/nand
 wifi.interface=wlan0
 wifi.supplicant_scan_interval=45
+
+accelerometer.invert_x=1
+#accelerometer.invert_y=1
+#accelerometer.invert_z=1
+#accelerometer.flip_xy=1
