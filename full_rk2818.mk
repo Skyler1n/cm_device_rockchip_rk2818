@@ -49,6 +49,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     Gallery \
+    RockParts \
     RKTSCalibration
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
