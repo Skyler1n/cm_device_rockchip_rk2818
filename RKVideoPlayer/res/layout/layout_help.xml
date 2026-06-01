@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/help_linearlayout" android:background="@drawable/toast_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/help_linearlayout" android:layout_width="match_parent" android:layout_height="80dp">
+        <TextView android:textSize="30dp" android:id="@+id/help_title" android:layout_width="wrap_content" android:layout_height="35dp" android:layout_marginLeft="300dp" android:layout_marginTop="30dp"/>
+        <TextView android:id="@+id/help_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="300dp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/help_bookmarkhelp" android:layout_width="match_parent" android:layout_height="40dp">
+        <ImageView android:id="@+id/bookmarkhelp_image" android:background="@drawable/video_bookmark" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="50dp"/>
+        <TextView android:textSize="18dp" android:layout_gravity="center" android:id="@+id/bookmarkhelp_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/help_brighthelp" android:layout_width="match_parent" android:layout_height="40dp">
+        <ImageView android:id="@+id/brighthelp_image" android:background="@drawable/video_bright3" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="50dp"/>
+        <TextView android:textSize="18dp" android:layout_gravity="center" android:id="@+id/brighthelp_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/help_prehelp" android:layout_width="match_parent" android:layout_height="40dp">
+        <ImageView android:id="@+id/prehelp_image" android:background="@drawable/video_button_pre" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="50dp"/>
+        <TextView android:textSize="18dp" android:layout_gravity="center" android:id="@+id/prehelp_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/help_pausehelp" android:layout_width="match_parent" android:layout_height="40dp">
+        <ImageView android:id="@+id/pausehelp_image" android:background="@drawable/video_button_pause" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="50dp"/>
+        <TextView android:textSize="18dp" android:layout_gravity="center" android:id="@+id/pausehelp_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/help_nexthelp" android:layout_width="match_parent" android:layout_height="40dp">
+        <ImageView android:id="@+id/nexthelp_image" android:background="@drawable/video_button_next" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="50dp"/>
+        <TextView android:textSize="18dp" android:layout_gravity="center" android:id="@+id/nexthelp_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/help_screensizehelp" android:layout_width="match_parent" android:layout_height="40dp">
+        <ImageView android:id="@+id/screensizehelp_image" android:background="@drawable/video_screenmode_original" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="50dp"/>
+        <TextView android:textSize="18dp" android:layout_gravity="center" android:id="@+id/screensizehelp_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/help_returnhelp" android:layout_width="match_parent" android:layout_height="40dp">
+        <ImageView android:id="@+id/returnhelp_image" android:background="@drawable/video_return" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="50dp"/>
+        <TextView android:textSize="18dp" android:layout_gravity="center" android:id="@+id/returnhelp_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/help_othershelp" android:layout_width="match_parent" android:layout_height="40dp">
+        <ImageView android:id="@+id/othershelp_image" android:background="@drawable/video_set" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="50dp"/>
+        <TextView android:textSize="18dp" android:layout_gravity="center" android:id="@+id/othershelp_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView android:textSize="18dp" android:layout_gravity="center" android:id="@+id/help_more" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="50dp"/>
+</LinearLayout>
