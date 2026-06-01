@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.rockchip.tscalibration">
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.SET_PREFERRED_APPLICATIONS"/>
+    <uses-permission android:name="rockchip.permission.FULL_SCREEN"/>
+    <application android:label="@string/app_name" android:icon="@drawable/icon">
+        <activity android:label="@string/activity_name" android:name="com.rockchip.tscalibration.TSCalibration" android:enabled="true" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="nosensor" android:configChanges="orientation|keyboardHidden">
+            <intent-filter android:priority="3">
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:label="@string/app_name" android:name="com.rockchip.tscalibration.CalibrationReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.rockchip.tscalibration.AutoCalibration" android:enabled="true"/>
+        <activity android:label="@string/app_name" android:name="com.rockchip.tscalibration.TouchScreenMonitor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

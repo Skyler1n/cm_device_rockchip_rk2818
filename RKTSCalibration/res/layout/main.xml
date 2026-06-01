@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ff000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/touch_point1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:layout_gravity="right" android:id="@+id/touch_point2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <AbsoluteLayout android:layout_gravity="center" android:id="@+id/AbsoluteLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:layout_below="@+id/touch_point1">
+        <ImageView android:layout_gravity="center" android:id="@+id/notification" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </AbsoluteLayout>
+    <ImageView android:layout_gravity="left" android:id="@+id/touch_point3" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:layout_gravity="right" android:id="@+id/touch_point4" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

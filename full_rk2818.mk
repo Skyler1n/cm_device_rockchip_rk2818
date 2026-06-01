@@ -49,7 +49,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     Gallery \
-    TSCalibration
+    RKTSCalibration
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := device/rockchip/rk2818/kernel/kernel.img
