@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <FrameLayout android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.2">
+            <android.rk.RockAudioPlayer.RepeatingImageButton android:id="@+id/vol2_button" android:background="@drawable/play_vol2" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.0365"/>
+        <FrameLayout android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.15">
+            <android.rk.RockAudioPlayer.RepeatingImageButton android:id="@+id/pre_button" android:background="@drawable/pre" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <FrameLayout android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.227">
+            <ImageView android:id="@+id/play_button" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/play_pause_btu"/>
+        </FrameLayout>
+        <FrameLayout android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.15">
+            <android.rk.RockAudioPlayer.RepeatingImageButton android:id="@+id/next_button" android:background="@drawable/nextbutton" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.0365"/>
+        <FrameLayout android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.2">
+            <android.rk.RockAudioPlayer.RepeatingImageButton android:id="@+id/vol1_button" android:background="@drawable/play_vol1" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.02"/>
+        <FrameLayout android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.16">
+            <ImageView android:id="@+id/abrepeat_button" android:background="@drawable/abbutton" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <FrameLayout android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.16">
+            <ImageView android:id="@+id/shuffle_button" android:background="@drawable/shufflebutton" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <FrameLayout android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.16">
+            <ImageView android:id="@+id/addtoplaylist_button" android:background="@drawable/addplaylist_addimage" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <FrameLayout android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.16">
+            <ImageView android:id="@+id/settings_button" android:background="@drawable/lyricbutton" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <FrameLayout android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.16">
+            <ImageView android:id="@+id/return_button" android:background="@drawable/returnbutton" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.02"/>
+    </LinearLayout>
+</LinearLayout>

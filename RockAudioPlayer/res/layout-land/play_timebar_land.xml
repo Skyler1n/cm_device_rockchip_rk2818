@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.5">
+        <TextView android:textSize="20dp" android:layout_gravity="center" android:id="@+id/currenttime" android:paddingLeft="11dp" android:paddingTop="5dp" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp"/>
+        <TextView android:textSize="20dp" android:layout_gravity="center" android:id="@+id/totaltime" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:layout_width="100dp" android:layout_height="30dp" android:layout_marginLeft="-120dp" android:layout_marginRight="10dp"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.5">
+        <SeekBar android:layout_gravity="center" android:id="@+id/timebar" android:background="#ff5a5a5a" android:paddingLeft="5dp" android:paddingRight="5dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</LinearLayout>

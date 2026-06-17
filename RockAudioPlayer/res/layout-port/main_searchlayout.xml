@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/search_layout" android:background="@drawable/searchbk" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="60dp">
+    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.1"/>
+    <ImageView android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/explorer_filesearch_1" android:layout_weight="0.125"/>
+    <EditText android:textSize="30dp" android:id="@+id/SearchText" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:verticalSpacing="600dp" android:layout_weight="0.5"/>
+    <Button android:gravity="center" android:id="@+id/SearchButton" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/search_title" android:layout_weight="0.15"/>
+</LinearLayout>

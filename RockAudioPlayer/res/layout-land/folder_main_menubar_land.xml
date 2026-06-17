@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.15" android:layout_alignParentBottom="true">
+    <LinearLayout android:background="@drawable/folder_bk" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.3792">
+        <FrameLayout android:id="@+id/all_music_fl" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/sort_button" android:background="@drawable/seletc_framelayout_bk" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/filesize"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/playlist_fl" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/search_button" android:background="@drawable/seletc_framelayout_bk" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/filesearch"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/return_fl" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/freturn_button" android:background="@drawable/seletc_framelayout_bk" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/return_2"/>
+        </FrameLayout>
+    </LinearLayout>
+    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.6208"/>
+</LinearLayout>

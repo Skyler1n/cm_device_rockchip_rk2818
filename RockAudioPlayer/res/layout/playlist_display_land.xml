@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/playlist_land" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/add_playlist_view" android:background="@color/twobronze" android:layout_width="wrap_content" android:layout_height="60dp">
+        <ImageView android:id="@+id/ImageSwitcher01" android:layout_width="80dp" android:layout_height="40dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:src="@drawable/addplaylist_addimage"/>
+    </LinearLayout>
+    <ListView android:id="@+id/ListView01" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

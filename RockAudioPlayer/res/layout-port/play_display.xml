@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/play_main_layout" android:background="@drawable/music_midbk" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/LinearLayout" android:background="@drawable/music_topbak" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.046">
+        <TextView android:ellipsize="end" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.0125"/>
+        <TextView android:textSize="20dp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/song_num" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.125"/>
+        <TextView android:ellipsize="end" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.2125"/>
+        <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/A_B_mode" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/audioab00" android:layout_weight="0.04"/>
+        <TextView android:ellipsize="end" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.2"/>
+        <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/suffle_mode" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/shuffle_01" android:layout_weight="0.04"/>
+        <TextView android:ellipsize="end" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.0437"/>
+        <TextView android:textSize="20dp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/bitrate" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.1"/>
+        <TextView android:textSize="20dp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/sampling_rate" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.025"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/song_info" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.5">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.2">
+            <TextView android:textSize="24sp" android:textColor="@color/lightgold" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.35">
+            <ImageButton android:layout_gravity="center" android:id="@+id/Disk_Spectrum" android:background="@drawable/disk" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.45">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/audio_info" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:ellipsize="end" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.1"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.123">
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.084"/>
+                    <ImageView android:id="@+id/artist_icon" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/playartists" android:layout_weight="0.05"/>
+                    <TextView android:textSize="20dp" android:id="@+id/artist_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:singleLine="true" android:layout_weight="0.882"/>
+                </LinearLayout>
+                <TextView android:layout_width="match_parent" android:layout_height="0dp" android:singleLine="true" android:layout_weight="0.074"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.123">
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="0.084"/>
+                    <ImageView android:id="@+id/Album_icon" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/playalbum" android:layout_weight="0.05"/>
+                    <TextView android:textSize="20dp" android:id="@+id/album_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:singleLine="true" android:layout_weight="0.882"/>
+                </LinearLayout>
+                <TextView android:layout_width="match_parent" android:layout_height="0dp" android:singleLine="true" android:layout_weight="0.074"/>
+            </LinearLayout>
+            <include layout="@layout/lyric_layout"/>
+        </FrameLayout>
+    </LinearLayout>
+    <include android:layout_gravity="center" android:id="@+id/include01" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.1" layout="@layout/play_timebar_land"/>
+    <include android:layout_gravity="center" android:id="@+id/include02" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="5dp" android:layout_weight="0.172" layout="@layout/play_menubar_land"/>
+</LinearLayout>

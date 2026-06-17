@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="playfxarray">
+        <item>3D</item>
+        <item>Heavy bass</item>
+        <item>Volume balance</item>
+    </array>
+    <array name="Displayarray">
+        <item>Playlist1</item>
+        <item>Playlist2</item>
+        <item>Playlist3</item>
+        <item>Playlist4</item>
+        <item>Playlist5</item>
+    </array>
+</resources>

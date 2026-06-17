@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true">
+    <FrameLayout android:id="@+id/all_music_fl" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/all_music_button_bd" android:focusable="true" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/allmusic_icon_select"/>
+        <ImageView android:id="@+id/all_music_button" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/allmusic_icon"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/mainsearch_fl" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/mainsearch_button_bc" android:focusable="true" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/mainsearch_icon_select"/>
+        <ImageView android:id="@+id/mainsearch_button" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/mainsearch_icon"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/artist_fl" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/artist_button_bc" android:focusable="true" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/artist_icon_select"/>
+        <ImageView android:id="@+id/artist_button" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/artist_icon"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/album_fl" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/album_button_bc" android:focusable="true" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/album_icon_selct"/>
+        <ImageView android:id="@+id/album_button" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/album_icon"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/gene_fl" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/genre_button_bc" android:focusable="true" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/genre_icon_select"/>
+        <ImageView android:id="@+id/genre_button" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/genre_icon"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/directory_fl" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/directory_button_bc" android:focusable="true" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/directory_icon_select"/>
+        <ImageView android:id="@+id/directory_button" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/directory_icon"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/playlist_fl" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/playlist_button_bc" android:focusable="true" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/playlist_icon_select"/>
+        <ImageView android:id="@+id/playlist_button" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/playlist_icon"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/played_fl" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/justplayed_button_bc" android:focusable="true" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bottom_08select"/>
+        <ImageView android:id="@+id/justplayed_button" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bottom_08"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/played_return" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/return_home_button_bc" android:focusable="true" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/return_1select"/>
+        <ImageView android:id="@+id/return_home_button" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/return_1"/>
+    </FrameLayout>
+</LinearLayout>

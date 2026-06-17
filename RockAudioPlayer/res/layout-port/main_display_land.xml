@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/main_display_layout_id" android:focusable="true" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.82">
+                    <include android:layout_alignParentTop="true" layout="@layout/addplaylist_land"/>
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ListView android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <include layout="@layout/main_searchlayout"/>
+                    </FrameLayout>
+                </LinearLayout>
+                <include android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.1789" android:layout_alignParentBottom="true" layout="@layout/main_menubar_land"/>
+            </LinearLayout>
+            <include android:layout_gravity="center_vertical" android:visibility="invisible" android:layout_alignParentBottom="true" layout="@layout/play_display"/>
+            <include layout="@layout/sd_error"/>
+            <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include android:layout_gravity="center_horizontal" android:focusable="true" android:visibility="invisible" layout="@layout/volumeprogress"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

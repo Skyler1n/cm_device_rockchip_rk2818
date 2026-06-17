@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@drawable/titlebackground" android:layout_width="match_parent" android:layout_height="30dp">
+    <TextView android:textSize="20dp" android:textColor="#fff" android:gravity="center" android:layout_gravity="center" android:id="@+id/main_titlebar_text_land" android:layout_width="350dp" android:layout_height="34dp" android:maxLines="1"/>
+    <ImageView android:id="@+id/main_titlebar_playornot" android:layout_width="wrap_content" android:layout_height="30dp" android:src="@drawable/play_pause_icon"/>
+    <ImageView android:id="@+id/main_titlebar_return" android:background="@drawable/main_titlebar_return" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginLeft="260dp" android:src="@drawable/main_titlebar_return"/>
+</LinearLayout>

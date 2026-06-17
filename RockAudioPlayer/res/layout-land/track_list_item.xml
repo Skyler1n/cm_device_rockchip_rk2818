@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="60dp">
+    <ImageView android:gravity="center" android:layout_gravity="center" android:id="@+id/play_ornot_icon" android:paddingLeft="10dp" android:layout_width="0dp" android:layout_height="50dp" android:layout_weight="0.0625"/>
+    <TextView android:textSize="22dp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/track_name" android:paddingLeft="20dp" android:layout_width="0dp" android:layout_height="60dp" android:singleLine="true" android:layout_weight="0.5"/>
+    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.0375"/>
+    <TextView android:textSize="22sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/track_artistname" android:layout_width="0dp" android:layout_height="60dp" android:singleLine="true" android:layout_weight="0.275"/>
+    <TextView android:scrollbarAlwaysDrawHorizontalTrack="true" android:textSize="22sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/track_duration" android:paddingRight="50dp" android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="0.2125"/>
+</LinearLayout>

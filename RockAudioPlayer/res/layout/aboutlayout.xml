@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="500dp" android:layout_height="400dp">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@android:drawable/toast_frame" android:layout_width="500dp" android:layout_height="400dp">
+        <ImageView android:layout_gravity="top|center_horizontal" android:layout_width="wrap_content" android:layout_height="100dp" android:src="@drawable/rockchip"/>
+        <TextView android:textSize="45dp" android:textColor="@color/white" android:gravity="top|center_horizontal" android:layout_gravity="center" android:id="@+id/about_message" android:paddingLeft="6dp" android:layout_width="300dp" android:layout_height="75dp" android:text="@string/about_text"/>
+        <TextView android:textSize="23dp" android:textColor="@color/white" android:gravity="top" android:layout_gravity="center" android:id="@+id/about_edition" android:paddingLeft="6dp" android:layout_width="210dp" android:layout_height="45dp" android:text="@string/about_edition"/>
+        <TextView android:textSize="23dp" android:textColor="@color/white" android:gravity="top" android:layout_gravity="center" android:id="@+id/about_date" android:paddingLeft="6dp" android:layout_width="210dp" android:layout_height="45dp" android:text="@string/about_date"/>
+        <TextView android:textSize="23dp" android:textColor="@color/white" android:gravity="top" android:layout_gravity="center" android:id="@+id/about_time" android:paddingLeft="6dp" android:layout_width="210dp" android:layout_height="45dp" android:text="@string/about_time"/>
+        <TextView android:textSize="25dp" android:gravity="top|center_horizontal" android:autoLink="all" android:layout_gravity="center" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rk_www"/>
+    </LinearLayout>
+</LinearLayout>

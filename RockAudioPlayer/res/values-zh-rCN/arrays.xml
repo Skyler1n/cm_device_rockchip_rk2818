@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="playfxarray">
+        <item>3D</item>
+        <item>重低音</item>
+        <item>音量均衡</item>
+    </array>
+    <array name="Displayarray">
+        <item>播放列表1</item>
+        <item>播放列表2</item>
+        <item>播放列表3</item>
+        <item>播放列表4</item>
+        <item>播放列表5</item>
+    </array>
+</resources>

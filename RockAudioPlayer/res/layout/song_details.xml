@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@android:drawable/toast_frame" android:visibility="gone" android:layout_width="350dp" android:layout_height="230dp">
+    <ImageView android:layout_gravity="right" android:id="@+id/close_details" android:background="@drawable/details_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-15dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="130dp">
+        <ImageView android:layout_gravity="left" android:id="@+id/song_icon" android:background="@drawable/song_icon" android:layout_width="80dp" android:layout_height="80dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="240dp" android:layout_height="130dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/song_name" android:layout_width="match_parent" android:layout_height="20dp">
+                <TextView android:id="@+id/song_name_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/song_type" android:layout_width="match_parent" android:layout_height="20dp">
+                <TextView android:id="@+id/song_type_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/song_size" android:layout_width="match_parent" android:layout_height="20dp">
+                <TextView android:id="@+id/song_size_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="20dp">
+                <TextView android:id="@+id/song_artist_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/song_album" android:layout_width="match_parent" android:layout_height="20dp">
+                <TextView android:id="@+id/song_album_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/song_connection_ratio" android:layout_width="match_parent" android:layout_height="20dp">
+                <TextView android:id="@+id/song_connection_ratio_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/song_path" android:layout_width="match_parent" android:layout_height="20dp">
+        <TextView android:id="@+id/song_path_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+</LinearLayout>

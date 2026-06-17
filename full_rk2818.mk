@@ -51,6 +51,7 @@ PRODUCT_PACKAGES += \
     Gallery \
     RockParts \
     RKTSCalibration \
+    RockAudioPlayer \
     RKVideoPlayer
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
